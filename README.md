@@ -22,3 +22,9 @@ docker rm -vf $(docker ps -aq)
 ```sh
 docker rmi -f $(docker images -aq)
 ```
+
+## Limpar o sistema
+
+```sh
+docker system prune -a --volumes
+```
