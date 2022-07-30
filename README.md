@@ -10,3 +10,15 @@
 ```sh
     docker pull sousaeliel/golang:scratch
 ```
+
+## Excluindo containers
+
+```sh
+docker rm -vf $(docker ps -aq)
+```
+
+## Excluindo imagens
+
+```sh
+docker rmi -f $(docker images -aq)
+```
